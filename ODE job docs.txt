@@ -1,0 +1,78 @@
+GIS::::
+
+SprDrrXX::
+General Command Line Interpreter task failed. JobName = SPrDRR12, DBName = SMSPHDSCA5W0. Detailed error of the job:{enter} GIS job SPrDRR** abended due to error "SmsSFScheduler.js BulkRunner: BPO: ERROR - A business process object (BPO) running BulkJobManager in state SaveProcessedItems was not able to perform a save. The reason is that the validation of 1 or more of the participant objects of the business proces" {enter}{enter} Job finished on restart.{enter}{enter} Closing the alarm.
+
+SGuLtrxx::
+
+Stream:DSFLMODS/Job:10SFMCHG abended with the following MSV error: Executable object failed. JobName = 10SFMCHG, ExecObj = ChgRptLoadSP, ExecType = Stored Procedure, DBName = SMSPHDSSGCB0. However the job has been restarted. will update the alarm shortly.
+
+
+The ODE bulk job failed with below MSV error: SmsSFScheduler.js BulkRunner: BPO: com.sms.tnt.framework.result.SmsTntRuntimeException: java.lang.reflect.InvocationTargetException This job initiates the ARP processing via child job ClaimFollower, which is currently running in DB and actively processing records. As of now, 15871 requests have been processed out of 16288. The abend will be restarted upon the completion of child job. Monitoring job progress but it may take more than an hour for the ARP processing to complete. The ARP processing completed and the abend has been restarted to successful completion.
+
+SGuStmxx::
+
+Jobs failed due to "General Command Line Interpreter task failed. DBName = SMSPHdsc20A0." Jobs finished on multiple restart.
+
+SPrsCAxx::
+JOBs Failed : SInCLFE4 Process Ins Claim Followers Q4 Abended Sat Sep 16, 2017 17:05:34 SFFinal J SInCLFE5 Process Ins Claim Followers Q5 Abended Sat Sep 16, 2017 17:05:34 SFFinal J SInCLFE6 Process Ins Claim Followers Q6 Abended Sat Sep 16, 2017 17:05:34 SFFinal J SInCLFEc Process Ins Claim FollowersQ12 Abended Sat Sep 16, 2017 17:05:34 SFFinal J SPrsCA04 Procs Contractual Allowances Abended Sat Sep 16, 2017 17:05:13 SFFinal J Due to MSV : SmsSFScheduler.js BulkRunner: BPO: ERROR - Security - ANA invalid user account! Restarted the JOB. Monitoring. 
+
+SCnvMon0::
+In Albany Test 3.4.300 (SFDCTA0HB001), multiple jobs in stream SFPostFn were failing with error - SmsSFScheduler.js BulkRunner: BPO: ERROR - Security - ANA invalid user account! Checked and do not found any reflection of the jobs in the database. So, recycled the respective bulk JVM - SF_A0HB_TEST_TNT33_SFPRTA0HB001_02. Post recycling of the JVM, all jobs got finished on restart. Hence, closing the alarm.
+
+SInEvG00::
+Stream:SFFinal/Job:SInEvG00 Job failed with MSV error : General Command Line Interpreter task failed. JobName = SInEvG00, DBName = SMSPHDSCAEU0.Job SInEvg00 in SFFinal stream has failed with MSV error SmsSFScheduler.js BulkRunner: BPO: com.sms.tnt.framework.result.SmsTntRuntimeException: java.lang.reflect.InvocationTargetException We have logged into database and found that the backend ARP processing job was not running and found in ERR state. So Front End Job has been restarted. Job got completed successfully. Hence closing the alarm.
+
+SSBOIMxx::
+Stream:SFFinal/Job:SSSBOIM0 has abended with MSV error- SmsSFScheduler.js BulkRunner: BPO: com.sms.tnt.framework.result.SmsTntRuntimeException: java.lang.reflect.InvocationTargetException Job has been finished on restart. Closing this alarm. 
+
+SSBOSMxx::
+Logged to server Checked the DBName:SMSTHdscV1B0/Stream:SFFinal/Job:SSBOSM03 status is abended MSV error ************************** General Command Line Interpreter task failed. JobName = SSBOSM03, DBName = SMSTHdscV1B0. ************************** Restarted the job and monitored for sometime JOB compeleted successfully Closing alarm
+
+SRmtDs00::
+In Albany Test 3.4.300 (SFDCTA0HB001), multiple jobs in stream SFPostFn were failing with error - SmsSFScheduler.js BulkRunner: BPO: ERROR - Security - ANA invalid user account! Checked and do not found any reflection of the jobs in the database. So, recycled the respective bulk JVM - SF_A0HB_TEST_TNT33_SFPRTA0HB001_02. Post recycling of the JVM, all jobs got finished on restart. Hence, closing the alarm.
+
+SSvcEx00::
+CERNER HEALTH SERVICES :: SFDCTESS3001:CERN_PA : DBName:SMSTHdscS3ES - job abends. Stream:SFEveng/Job:SCLBOP00 failed with MSV error "General Command Line Interpreter task failed. JobName = SCLBOP00, DBName = SMSTHDSCS3ES." Stream:SFEveng/Job:SStArc18 failed with MSV error "General Command Line Interpreter task failed. JobName = SStArc18, DBName = SMSTHDSCS3ES." Stream:SFEveng/Job:SSvcEx00 failed with MSV error "General Command Line Interpreter task failed. JobName = SSvcEx00, DBName = SMSTHDSCS3ES." Stream:SFEveng/Job:SSvcPr00 failed with MSV error "General Command Line Interpreter task failed. JobName = SSvcPr00, DBName = SMSTHDSCS3ES." Job failed on mutiple restarts, Requesting someone to have a look. SR # 416759763 has been raised to track the issue
+
+SSvcPr00::
+CERNER HEALTH SERVICES :: SFDCTESS3001:CERN_PA : DBName:SMSTHdscS3ES - job abends. Stream:SFEveng/Job:SCLBOP00 failed with MSV error "General Command Line Interpreter task failed. JobName = SCLBOP00, DBName = SMSTHDSCS3ES." Stream:SFEveng/Job:SStArc18 failed with MSV error "General Command Line Interpreter task failed. JobName = SStArc18, DBName = SMSTHDSCS3ES." Stream:SFEveng/Job:SSvcEx00 failed with MSV error "General Command Line Interpreter task failed. JobName = SSvcEx00, DBName = SMSTHDSCS3ES." Stream:SFEveng/Job:SSvcPr00 failed with MSV error "General Command Line Interpreter task failed. JobName = SSvcPr00, DBName = SMSTHDSCS3ES." Job failed on mutiple restarts, Requesting someone to have a look. SR # 416759763 has been raised to track the issue
+
+SGCBWlQ0::
+Stream:SFFinal/Job:SGCBWlQ0 failed with an MSV error:"SmsSFScheduler.js INFO: Path to Text Log File: C:\Program Files\Cerner\DSS\RUNTIME\TNTLOG\SMSPHDSCA5W0\SGCBWlQ0_SFFinal_2017_0503_181524.log" job finished on restart,closing alarm.
+
+SSBARE00::
+Recalc job SSBARE00 abended due to error "SmsSFScheduler.js BulkRunner: BPO: List of parameters: Parm0 = com.siemens.med.hs.sf.thirdpartycollection.controller.AutomaticRecallEvaluationBulkProcessor" Job finished on restart. Closing the alarm. 
+
+SSSBOIM0::
+Stream:SFFinal/Job:SSSBOIM0 has abended with MSV error- SmsSFScheduler.js BulkRunner: BPO: com.sms.tnt.framework.result.SmsTntRuntimeException: java.lang.reflect.InvocationTargetException Job has been finished on restart. Closing this alarm. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Claims::::
+
+SCLBOP00::
+CERNER HEALTH SERVICES :: SFDCTESS3001:CERN_PA : DBName:SMSTHdscS3ES - job abends. Stream:SFEveng/Job:SCLBOP00 failed with MSV error "General Command Line Interpreter task failed. JobName = SCLBOP00, DBName = SMSTHDSCS3ES." Stream:SFEveng/Job:SStArc18 failed with MSV error "General Command Line Interpreter task failed. JobName = SStArc18, DBName = SMSTHDSCS3ES." Stream:SFEveng/Job:SSvcEx00 failed with MSV error "General Command Line Interpreter task failed. JobName = SSvcEx00, DBName = SMSTHDSCS3ES." Stream:SFEveng/Job:SSvcPr00 failed with MSV error "General Command Line Interpreter task failed. JobName = SSvcPr00, DBName = SMSTHDSCS3ES." Job failed on mutiple restarts, Requesting someone to have a look. SR # 416759763 has been raised to track the issue
+
+SSlnPCLM::
+In Albany Test 3.4.300 (SFDCTA0HB001), multiple jobs in stream SFPostFn were failing with error - SmsSFScheduler.js BulkRunner: BPO: ERROR - Security - ANA invalid user account! Checked and do not found any reflection of the jobs in the database. So, recycled the respective bulk JVM - SF_A0HB_TEST_TNT33_SFPRTA0HB001_02. Post recycling of the JVM, all jobs got finished on restart. Hence, closing the alarm.
+
+SSRBCL00::
+In Albany Test 3.4.300 (SFDCTA0HB001), multiple jobs in stream SFPostFn were failing with error - SmsSFScheduler.js BulkRunner: BPO: ERROR - Security - ANA invalid user account! Checked and do not found any reflection of the jobs in the database. So, recycled the respective bulk JVM - SF_A0HB_TEST_TNT33_SFPRTA0HB001_02. Post recycling of the JVM, all jobs got finished on restart. Hence, closing the alarm.
+
+SRDPCL::
+Job failed with error "SmsSFScheduler.js BulkRunner: BPO: com.sms.tnt.framework.result.SmsTntRuntimeException: java.lang.reflect.InvocationTargetException" Restarted the job and it completed.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Patient access::::
+SCLORE00::
+In Albany Test 3.4.300 (SFDCTA0HB001), multiple jobs in stream SFPostFn were failing with error - SmsSFScheduler.js BulkRunner: BPO: ERROR - Security - ANA invalid user account! Checked and do not found any reflection of the jobs in the database. So, recycled the respective bulk JVM - SF_A0HB_TEST_TNT33_SFPRTA0HB001_02. Post recycling of the JVM, all jobs got finished on restart. Hence, closing the alarm.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Reimbursement::::
+
+SRvRcA00::
+In Albany Test 3.4.300 (SFDCTA0HB001), multiple jobs in stream SFPostFn were failing with error - SmsSFScheduler.js BulkRunner: BPO: ERROR - Security - ANA invalid user account! Checked and do not found any reflection of the jobs in the database. So, recycled the respective bulk JVM - SF_A0HB_TEST_TNT33_SFPRTA0HB001_02. Post recycling of the JVM, all jobs got finished on restart. Hence, closing the alarm.
+
+SSRevRc0::
+Barnes Jewish Hospital :: SFDA4PA020101:BARN_MO :: DBName:SMSPHdsc20A0/Stream:SFEveng/Job:SSRevRc0 Stream:SFEveng/Job:SSRevRc0 failed with an MSV error: "SmsSFScheduler.js BulkRunner: BPO: com.sms.tnt.framework.result.SmsTntRuntimeException: java.lang.reflect.InvocationTargetException" "General Command Line Interpreter task failed. JobName = SSRevRc0, DBName = SMSPHdsc20A0." Restarted the job couple of times but it failed again. Job is lying in Abended state currently. Routing to Tier 2 for further follow-up. SR# 416232648 has been raised to track the issue. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Command line ODE jobs::
+Stream:SFBatch/Job:SPrBat00 abended with error - General Command Line Interpreter task failed. JobName = SPrBat00, DBName = SMSPHDSCHBA0. The query - select COUNT(*) from Batch where StsCd=2 returned '0'. So, restarted the job SPrBat00 and it got finished. Hence, closing the alarm.
